@@ -51,8 +51,8 @@ class FlowersFixture extends TestFixture
                 'occasion_id' => 1,
                 'price' => 1,
                 'qty' => 1,
-                'created' => '2020-04-26 16:10:18',
-                'modified' => '2020-04-26 16:10:18',
+                'created' => '2020-04-26 17:07:22',
+                'modified' => '2020-04-26 17:07:22',
             ],
         ];
         parent::init();

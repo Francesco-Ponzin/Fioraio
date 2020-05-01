@@ -18,6 +18,16 @@ CREATE TABLE `flowers` (
     FOREIGN KEY (`occasion_id`) REFERENCES `occasions` (`id`)  ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
+
+INSERT INTO `occasions`
+(`name`,`description`)
+VALUES
+("Innamoramento","Quando ci si innamora servono dei fiori per divinare"),
+("Studio","Quando si studia, servono fiori per pensare"),
+("Matrimonio","Tipica usanza di ogni cultura umana, servono fiori per la nuova vita assieme"),
+("Anniversario","Ci vuole un fiore per chiedere scusa per essersi dimenticati l'anniversario");
+
+
 INSERT INTO `flowers`
 (`name`,`occasion_id`,`price`,`qty`)
 VALUES
@@ -30,11 +40,4 @@ VALUES
 ("Orchidea",3,30,5);
 
 
-INSERT INTO `occasions`
-(`name`,`description`)
-VALUES
-("Innamoramento","Quando ci si innamora servono dei fiori per divinare"),
-("Studio","Quando si studia, servono fiori per pensare"),
-("Matrimonio","Tipica usanza di ogni cultura umana, servono fiori per la nuova vita assieme"),
-("Anniversario","Ci vuole un fiore per chiedere scusa per essersi dimenticati l'anniversario");
 
